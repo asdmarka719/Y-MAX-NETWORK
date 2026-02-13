@@ -1,0 +1,13 @@
+<input type="text" id="imgInput" placeholder="رابط صورة العرض (اختياري)">
+
+<script>
+// تحديث كائن الإرسال
+const newContent = {
+    id: Date.now(),
+    title: document.getElementById('titleInput').value || "Y-MAX NETWORK",
+    text: document.getElementById('msgInput').value,
+    image: document.getElementById('imgInput').value || "", // رابط الصورة
+    type: document.getElementById('typeInput').value,
+    show: true
+};
+</script>
